@@ -1,6 +1,6 @@
 package state;
 
-public class EstadoCerrado extends ConnectionState{
+public class EstadoCerrado extends EstadoConexion{
 
 	@Override
 	public Estado estado() {
