@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class ReferencesFactory {
     private Map<String, Integer> references;
-    private 
+    private static final ReferencesFactory factory = new ReferencesFactory();
     private int reference;
 
     public ReferencesFactory() {
@@ -25,6 +25,10 @@ public class ReferencesFactory {
 
     public void removeReference(String key) {
         this.references.remove(key);
+    }
+    
+    public static ReferencesFactory getFactory(){
+    	return factory;
     }
 
 }
