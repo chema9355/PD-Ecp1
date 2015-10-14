@@ -8,27 +8,31 @@ public class EstadoParado extends EstadoConexion {
 	}
 
 	@Override
-	public void abrir() {
-		// TODO Auto-generated method stub
-		
+	public void abrir(Conexion conexion) {
+		throw new UnsupportedOperationException("Acción no permitida... ");
 	}
 
 	@Override
-	public void cerrar() {
-		// TODO Auto-generated method stub
-		
+	public void cerrar(Conexion conexion) {
+		throw new UnsupportedOperationException("Acción no permitida... ");
 	}
 
 	@Override
-	public void parar() {
-		// TODO Auto-generated method stub
-		
+	public void parar(Conexion conexion) {
 	}
 
 	@Override
-	public void inciiar() {
-		// TODO Auto-generated method stub
-		
+	public void iniciar(Conexion conexion) {
+		conexion.setEstado(new EstadoPreparado());
 	}
 
+	@Override
+	public void enviar(Conexion conexion, String msg) {
+		throw new UnsupportedOperationException("Acción no permitida... ");
+	}
+
+	@Override
+	public void recibir(Conexion conexion, int respuesta) {
+		throw new UnsupportedOperationException("Acción no permitida... ");
+	}
 }
