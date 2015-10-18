@@ -2,9 +2,9 @@ package calculadora;
 
 import upm.jbb.IO;
 
-public class Suma extends ComandoAbstracto{
-	
-	public Suma(Calculator calculadora){
+public class Suma extends ComandoAbstracto {
+
+	public Suma(Calculator calculadora) {
 		super(calculadora);
 	}
 
@@ -12,7 +12,7 @@ public class Suma extends ComandoAbstracto{
 	public void execute() {
 		int i = IO.getIO().readInt();
 		this.getCalculadora().add(i);
-		
+
 	}
 
 	@Override

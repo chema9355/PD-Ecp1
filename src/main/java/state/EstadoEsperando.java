@@ -34,15 +34,13 @@ public class EstadoEsperando extends EstadoConexion {
 
 	@Override
 	public void recibir(Conexion conexion, int respuesta) {
-		if (respuesta > 0){
+		if (respuesta > 0) {
 			conexion.getLink().recibir(respuesta);
 			conexion.setEstado(new EstadoCerrado());
-		}
-		else if ( respuesta == 0){
+		} else if (respuesta == 0) {
 			conexion.getLink().recibir(respuesta);
 			conexion.setEstado(new EstadoPreparado());
-		}
-		else {
+		} else {
 			throw new UnsupportedOperationException("Acción no permitida... ");
 		}
 	}

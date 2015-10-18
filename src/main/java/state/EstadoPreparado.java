@@ -1,6 +1,6 @@
 package state;
 
-public class EstadoPreparado extends EstadoConexion{
+public class EstadoPreparado extends EstadoConexion {
 
 	@Override
 	public Estado estado() {
@@ -9,7 +9,7 @@ public class EstadoPreparado extends EstadoConexion{
 
 	@Override
 	public void abrir(Conexion conexion) {
-		
+
 	}
 
 	@Override
@@ -23,7 +23,7 @@ public class EstadoPreparado extends EstadoConexion{
 	}
 
 	@Override
-	public void iniciar(Conexion conexion) {	
+	public void iniciar(Conexion conexion) {
 	}
 
 	@Override
@@ -35,7 +35,7 @@ public class EstadoPreparado extends EstadoConexion{
 	@Override
 	public void recibir(Conexion conexion, int respuesta) {
 		throw new UnsupportedOperationException("Acción no permitida... ");
-		
+
 	}
 
 }

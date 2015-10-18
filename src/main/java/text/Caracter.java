@@ -1,19 +1,19 @@
 package text;
 
-public class Caracter extends Componente{
-	
+public class Caracter extends Componente {
+
 	private char c;
-	
-	public Caracter (char key){
-		this.c=key;
+
+	public Caracter(char key) {
+		this.c = key;
 	}
 
 	@Override
 	public String dibujar(boolean b) {
-		if(b){
+		if (b) {
 			return String.valueOf(c).toUpperCase();
-		}
-		else return String.valueOf(c);
+		} else
+			return String.valueOf(c);
 	}
 
 	@Override
@@ -22,7 +22,7 @@ public class Caracter extends Componente{
 
 	@Override
 	public void remove(Componente componente) {
-		
+
 	}
 
 }

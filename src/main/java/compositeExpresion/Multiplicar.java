@@ -10,10 +10,10 @@ public class Multiplicar extends CompositeNode {
 	public int operar() {
 		return this.getExp1().operar() * this.getExp2().operar();
 	}
-	
+
 	@Override
 	public String toString() {
-		return "(" + this.getExp1().toString() + "*" + this.getExp2().toString() +")";
+		return "(" + this.getExp1().toString() + "*" + this.getExp2().toString() + ")";
 	}
 
 }

@@ -1,10 +1,6 @@
 package calculadora;
 
-import java.io.Console;
-
-import upm.jbb.IO;
-
-public class Total extends ComandoAbstracto{
+public class Total extends ComandoAbstracto {
 
 	public Total(Calculator calculadora) {
 		super(calculadora);

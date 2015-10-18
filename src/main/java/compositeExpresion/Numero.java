@@ -1,13 +1,13 @@
 package compositeExpresion;
 
-public class Numero extends Expresion{
+public class Numero extends Expresion {
 
 	private int num;
-	
-	public Numero(int num){
-	this.num=num;
+
+	public Numero(int num) {
+		this.num = num;
 	}
-	
+
 	@Override
 	public int operar() {
 		return this.num;

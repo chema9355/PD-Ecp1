@@ -1,6 +1,6 @@
 package compositeExpresion;
 
-public class Restar extends CompositeNode{
+public class Restar extends CompositeNode {
 
 	public Restar(Expresion exp1, Expresion exp2) {
 		super(exp1, exp2);
@@ -10,9 +10,9 @@ public class Restar extends CompositeNode{
 	public int operar() {
 		return this.getExp1().operar() - this.getExp2().operar();
 	}
-	
+
 	@Override
 	public String toString() {
-		return "(" + this.getExp1().toString() + "-" + this.getExp2().toString() +")";
+		return "(" + this.getExp1().toString() + "-" + this.getExp2().toString() + ")";
 	}
 }

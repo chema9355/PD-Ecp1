@@ -16,13 +16,13 @@ public class LanguajeManager {
 	public NaturalNumber getNumber() {
 		return languaje;
 	}
-	
-	public static void main (String [ ] args) {
-		 LanguajeManager a = new LanguajeManager();
-		 a.setCreator(new FrenchCreator());
-		 a.createLanguaje();
-		 System.out.print(a.languaje.getTextValue());
-        //Aquí las instrucciones del método
+
+	public static void main(String[] args) {
+		LanguajeManager a = new LanguajeManager();
+		a.setCreator(new FrenchCreator());
+		a.createLanguaje();
+		System.out.print(a.languaje.getTextValue());
+		// Aquí las instrucciones del método
 
 	}
 

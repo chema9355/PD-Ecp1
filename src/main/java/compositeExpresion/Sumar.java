@@ -1,7 +1,6 @@
 package compositeExpresion;
 
-public class Sumar extends CompositeNode{
-
+public class Sumar extends CompositeNode {
 
 	public Sumar(Expresion exp1, Expresion exp2) {
 		super(exp1, exp2);
@@ -14,7 +13,7 @@ public class Sumar extends CompositeNode{
 
 	@Override
 	public String toString() {
-		return "(" + this.getExp1().toString() + "+" + this.getExp2().toString() +")";
+		return "(" + this.getExp1().toString() + "+" + this.getExp2().toString() + ")";
 	}
 
 }

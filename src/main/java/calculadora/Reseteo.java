@@ -1,8 +1,6 @@
 package calculadora;
 
-import upm.jbb.IO;
-
-public class Reseteo extends ComandoAbstracto{
+public class Reseteo extends ComandoAbstracto {
 
 	public Reseteo(Calculator calculadora) {
 		super(calculadora);

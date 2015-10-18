@@ -2,7 +2,7 @@ package calculadora;
 
 import upm.jbb.IO;
 
-public class Resta extends ComandoAbstracto{
+public class Resta extends ComandoAbstracto {
 
 	public Resta(Calculator calculadora) {
 		super(calculadora);

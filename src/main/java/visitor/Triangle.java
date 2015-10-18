@@ -1,34 +1,34 @@
 package visitor;
 
 public class Triangle extends Figure {
-    private double base;
+	private double base;
 
-    private double height;
+	private double height;
 
-    public Triangle(String description, double base, double height) {
-        super(description);
-        this.base = base;
-        this.height = height;
-    }
+	public Triangle(String description, double base, double height) {
+		super(description);
+		this.base = base;
+		this.height = height;
+	}
 
-    @Override
-    public double area() {
-        return base * height * 0.5;
-    }
+	@Override
+	public double area() {
+		return base * height * 0.5;
+	}
 
-    @Override
-    public double numberOfSides() {
-        return 3;
-    }
+	@Override
+	public double numberOfSides() {
+		return 3;
+	}
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
+	@Override
+	public String toString() {
+		return super.toString();
+	}
 
 	@Override
 	public void accept(Visitor v) {
-		 v.visitTriangle(this);
+		v.visitTriangle(this);
 	}
 
 }

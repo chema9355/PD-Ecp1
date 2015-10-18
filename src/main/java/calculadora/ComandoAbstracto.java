@@ -1,14 +1,14 @@
 package calculadora;
 
-public abstract class ComandoAbstracto implements Comando{
+public abstract class ComandoAbstracto implements Comando {
 
-	 private Calculator calculadora;
+	private Calculator calculadora;
 
-	 public ComandoAbstracto(Calculator calculadora){
-		 this.calculadora=calculadora;
-	 }
-	 
-	 protected Calculator getCalculadora(){
-		 return this.calculadora;
-	 }
+	public ComandoAbstracto(Calculator calculadora) {
+		this.calculadora = calculadora;
+	}
+
+	public Calculator getCalculadora() {
+		return this.calculadora;
+	}
 }
