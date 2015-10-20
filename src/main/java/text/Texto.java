@@ -25,7 +25,7 @@ public class Texto extends Escrito {
 
 	@Override
 	public void remove(Componente componente) {
-		if (componente instanceof Escrito) {
+		if (componente.isEscrito() == true) {
 			this.getDocs().remove(componente);
 		} else {
 		}
@@ -33,7 +33,7 @@ public class Texto extends Escrito {
 
 	@Override
 	public void add(Componente componente) {
-		if (componente instanceof Escrito) {
+		if (componente.isEscrito() == true) {
 			this.getDocs().add(componente);
 		} else {
 			throw new UnsupportedOperationException();

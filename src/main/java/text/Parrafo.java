@@ -25,7 +25,7 @@ public class Parrafo extends Escrito {
 
 	@Override
 	public void remove(Componente componente) {
-		if (componente instanceof Caracter) {
+		if (componente.isEscrito()==false) {
 			this.getDocs().remove(componente);
 		} else {
 		}
@@ -33,7 +33,7 @@ public class Parrafo extends Escrito {
 
 	@Override
 	public void add(Componente componente) {
-		if (componente instanceof Caracter) {
+		if (componente.isEscrito()==false) {
 			this.getDocs().add(componente);
 		} else {
 			throw new UnsupportedOperationException();

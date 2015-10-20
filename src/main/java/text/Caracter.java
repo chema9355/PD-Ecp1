@@ -25,4 +25,10 @@ public class Caracter extends Componente {
 
 	}
 
+	@Override
+	public boolean isEscrito() {
+		return false;
+	}
+	
+	
 }

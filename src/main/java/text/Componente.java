@@ -1,6 +1,8 @@
 package text;
 
 public abstract class Componente {
+	
+	public abstract boolean isEscrito();
 
 	public abstract String dibujar(boolean b);
 

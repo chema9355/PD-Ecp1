@@ -14,5 +14,9 @@ public abstract class Escrito extends Componente {
 	public List<Componente> getDocs() {
 		return this.list;
 	}
+	
+	public boolean isEscrito(){
+		return true;
+	}
 
 }
