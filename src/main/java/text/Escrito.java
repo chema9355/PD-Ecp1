@@ -5,14 +5,14 @@ import java.util.List;
 
 public abstract class Escrito extends Componente {
 
-	private List<Componente> list;
+	private List<Componente> lista;
 
 	public Escrito() {
-		this.list = new ArrayList<Componente>();
+		this.lista = new ArrayList<Componente>();
 	}
 
 	public List<Componente> getDocs() {
-		return this.list;
+		return this.lista;
 	}
 	
 	public boolean isEscrito(){

@@ -7,10 +7,10 @@ import calculadora.Suma;
 import calculadora.Total;
 import upm.jbb.IO;
 
-public class MainCalculatorMementable {
+public class MainCalculadoraMementable {
 	private CommandManager commandManager;
 
-	public MainCalculatorMementable() {
+	public MainCalculadoraMementable() {
 
 		GestorMementos<MementoCalculadora> gm = new GestorMementos<MementoCalculadora>();
 		Originador o = new Originador(666);
@@ -30,6 +30,6 @@ public class MainCalculatorMementable {
 	}
 
 	public static void main(String[] args) {
-		IO.getIO().addView(new MainCalculatorMementable());
+		IO.getIO().addView(new MainCalculadoraMementable());
 	}
 }
